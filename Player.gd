@@ -25,8 +25,8 @@ func _process(delta):
 		$AnimatedSprite.stop()
 
 	position += velocity * delta
-	position.x = clamp(position.x, 0, bounds.x)
-	position.y = clamp(position.y, 0, bounds.y)
+	position.x = clamp(position.x, 100, bounds.x)
+	position.y = clamp(position.y, 100, bounds.y)
 
 	if velocity.x != 0:
 		$AnimatedSprite.animation = "walk"
